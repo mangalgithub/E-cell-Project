@@ -53,10 +53,8 @@ body{
     left: 119px;
     border-radius: 15px;
     justify-content: space-between;
-   /* background-color: red; */
 }
 .box1{
-  /* background-color: green; */
   width: 32%;
    background: linear-gradient(135.38deg, #3300FF 0%, #FA00FF 98.32%);
    box-shadow: 0px 0px 4px 4px #00000040;
