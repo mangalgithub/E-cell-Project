@@ -1,10 +1,23 @@
 var clickedBtnId = [];
-function handleNavbar() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+// Function to toggle the navigation bar
+function toggleNav() {
+  var navBar = document.getElementById("myTopnav");
+  var icon = navBar.querySelector(".icon");
+
+  if (navBar.classList.contains("open")) {
+    // Close the navbar
+    navBar.classList.remove("open");
+    icon.textContent = "☰"; // Change back to "☰" when closing
   } else {
-    x.className = "topnav";
+    // Open the navbar
+    navBar.classList.add("open");
+    icon.textContent = "✕"; // Change to "✕" when opening
+  }
+
+  if (navBar.classList.contains("responsive")) {
+    navBar.classList.remove("responsive");
+  } else {
+    navBar.classList.add("responsive");
   }
 }
 const clickableDivs = document.querySelectorAll(".boxgrid");

@@ -2,18 +2,15 @@ body{
     padding: 0;
     margin: 0;
 }
-.topnav {
-  background-color: #FFFFFF;
-  overflow: hidden;
-  color: black;
+/* NavBar css */
+.navBar {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navBar a {
   float: right;
-}
-.navbar{
-    box-shadow: 0px 1px 11px black ;
-    height: 50px;
-}
-.topnav a {
-  float: left;
   display: block;
   color: black;
   text-align: center;
@@ -21,29 +18,59 @@ body{
   text-decoration: none;
   font-size: 17px;
 }
-.topnav .icon {
+
+.navBar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navBar .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
+
+@media screen and (max-width: 393px) {
+  .navBar a:not(first-child) {
+    display: none;
+  }
+  .navBar a.icon {
     float: right;
     display: block;
   }
+  .navBar {
+    display: block;
+  }
 }
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
+
+@media screen and (max-width: 393px) {
+  .navBar.responsive {
+    position: relative;
+  }
+  .navBar.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .navBar.responsive a {
     float: none;
     display: block;
     text-align: center;
   }
 }
+
+ a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  size: 18px;
+  line-height: 21.78px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 1);
+}
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.25) inset;
+}
+
 .main{
     position: relative;
    height: 385px;
