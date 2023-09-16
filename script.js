@@ -1,3 +1,4 @@
+const clickedBtnId=[];
 function handleNavbar() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -6,4 +7,6 @@ function handleNavbar() {
     x.className = "topnav";
   }
 }
+
+
 
