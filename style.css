@@ -1,6 +1,44 @@
-body {
-  margin: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Define the animation for the background */
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the content */
+    animation: backgroundAnimation 10s linear infinite; /* Apply the background animation */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* Apply the background animation */ */
+    animation: gradientAnimation 10s linear infinite;
+}
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(to right, #ff5733, #33d9ff);
+    }
+    25% {
+        background: linear-gradient(to right, #ff33a3, #33ff63);
+    }
+    50% {
+        background: linear-gradient(to right, #33aaff, #ffaa33);
+    }
+    75% {
+        background: linear-gradient(to right, #3388ff, #ff33dd);
+    }
+    100% {
+        background: linear-gradient(to right, #ff5733, #33d9ff);
+    }
+}
+
 /* NavBar css */
 .navBar {
   background-color: rgba(255, 255, 255, 1);
@@ -197,3 +235,49 @@ hr {
     filter: FlipV;
   }
 }
+
+.portfolio-card {
+     margin: 0 auto;
+     margin-top: 150px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-card img {
+    max-width: 100%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.portfolio-card h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.portfolio-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.portfolio-card .btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.portfolio-card .btn:hover {
+    background-color: #0056b3;
+}
+
+
