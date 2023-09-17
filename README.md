@@ -8,7 +8,10 @@
 4.Deployed on netlify
 
 ![image](https://github.com/mangalgithub/E-cell-Project/assets/127006680/157a24f5-688b-4316-822d-e5b8796dce2b)
+![image](https://github.com/mangalgithub/E-cell-Project/assets/127006680/ec093dfa-3d08-49c6-98f7-24cb531b989e)
+
 
 ![image](https://github.com/mangalgithub/E-cell-Project/assets/127006680/01ba14fe-e667-474d-9c20-ba2c431d68d7)
 
+![image](https://github.com/mangalgithub/E-cell-Project/assets/127006680/9d251fb2-f57d-4761-ae8b-e7d8392756e1)
 
